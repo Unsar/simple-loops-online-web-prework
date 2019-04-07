@@ -1,6 +1,14 @@
 # REMEMBER: print your output to the terminal using 'puts'
 
 def loop_iterator(number_of_times)
+    counter = 0 
+  loop do
+    counter <= number_of_times
+    puts "Welcome to Flatiron School's Web Development Course!"
+    counter += 1
+    if counter >= number_of_times 
+      break
+    end
   # Code your solution here using the "loop" keyword to puts out the below phrase
   # This and all the other methods take an argument of an integer 
   # The integer is the number of times the loops should puts out the phrase
@@ -10,57 +18,44 @@ def loop_iterator(number_of_times)
   #  phrase and break when the counter hits the appropriate number...
   # phrase = "Welcome to Flatiron School's Web Development Course!"
 end
-
-def loop_iterator(number_of_times)
-  counter = 0 
-  loop do
-    counter <= number_of_times
-    puts "Welcome to Flatiron School's Web Development Course!"
-    counter += 1
-    if counter >= number_of_times 
-      break
-    end
-  end
   
   
 def times_iterator(number_of_times)
-  # code your solution here using the "times" keyword
   number_of_times.times do
   puts "Welcome to Flatiron School's Web Development Course!"
   end
+  # code your solution here using the "times" keyword
 end
 
 
-def while_iterator(number_of_times)
-  # code your solution here using the "while" keyword
-  # hint: user a counter to tell the while loop when to stop!
 def while_iterator(number_of_times)
   counter = 0
   while counter < number_of_times
   puts "Welcome to Flatiron School's Web Development Course!"
   counter += 1
   end
+  # code your solution here using the "while" keyword
+  # hint: user a counter to tell the while loop when to stop!
 end
 
 
-def until_iterator(number_of_times)
-  # code your solution here using the "until" keyword
-  # hint: use a counter to tell the until loop when to stop!
 def until_iterator(number_of_times)
   counter = 0
   until counter >= number_of_times
   puts "Welcome to Flatiron School's Web Development Course!"
   counter += 1
   end
+  # code your solution here using the "until" keyword
+  # hint: use a counter to tell the until loop when to stop!
 end
 
 
 def for_iterator(number_of_times)
-  # code your solution here using the "for" keyword
-  # remember that `for` requires a range of numbers. How can we turn our number into a range?
-  phrase = "Welcome to Flatiron School's Web Development Course!"
-def for_iterator(number_of_times)
   counter = 1..number_of_times
   for item in counter
   puts "Welcome to Flatiron School's Web Development Course!"
+end
+  # code your solution here using the "for" keyword
+  # remember that `for` requires a range of numbers. How can we turn our number into a range?
+  # phrase = "Welcome to Flatiron School's Web Development Course!"
 end
